@@ -25,14 +25,13 @@ const Home = () => {
             <button className='btn'><img src={play_icon} alt="" />Play</button>
             <button className='btn dark-btn'><img src={info_icon} alt="" />More Info</button>
           </div>
-          <Titlecards/>
+          <Titlecards category={"popular"}/>
         </div>
       </div>
       <div className="more-cards">
-      <Titlecards title={"BlockBuster Movies"}/>
-      <Titlecards title={"Only On Netflix"}/>
-      <Titlecards title={"Upcoming"}/>
-      <Titlecards title={"Top pics For You"}/>
+      <Titlecards title={"Only On Netflix"} category={"now_playing"}/>
+      <Titlecards title={"Upcoming"}category={"upcoming"}/>
+      <Titlecards title={"Top pics For You"} category={"top_rated"}/>
       </div>
       <Footer/>
       </div>
